@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Recruitment</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a9a7a7;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px 40px; /* 增加了内边距 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header nav {
+            display: flex;
+            justify-content: center;
+        }
+        .header nav a {
+            color: #FFFFFF; /* 更改链接颜色 */
+            margin: 0 15px; /* 增加了链接之间的间距 */
+            text-decoration: none;
+            font-family: 'Helvetica', sans-serif; /* 更改字体样式 */
+            font-weight: bold; /* 加粗字体 */
+        }
+        .header div div a{
+            color: #ffffff; /* 更改链接颜色 */
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            background-color: #a9a7a7;
+        }
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #a9a7a7;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .recommendations {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+
+            background: rgba(238, 238, 238, 0.5); /* 半透明灰色背景 */
+            backdrop-filter: blur(10px); /* 磨砂效果 */
+            border-radius: 15px; /* 圆角 */
+        }
+        .job-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .job-card h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .job-card p {
+            color: #666;
+            margin: 5px 0;
+        }
+        .job-card button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .view-more {
+            text-align: center;
+            padding: 20px;
+        }
+        .view-more button {
+            background-color: #e0e0e0;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="logo.png" alt="Logo" style="width: 50px;">
+        <nav>
+            <a href="#">首页</a>
+            <a href="#">搜索</a>
+            <a href="#">招聘信息</a>
+            <a href="#">企业信息</a>
+            <a href="#">后台管理</a>
+        </nav>
+        <div>
+            <a href="#">登录/注册</a>
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="搜索职业">
+        <button>搜索</button>
+    </div>
+
+    <div class="recommendations">
+        <div class="job-card">
+            <h3>电商业务专员</h3>
+            <p>7-8k·13薪</p>
+            <p>杭州</p>
+            <button>Join us.</button>
+        </div>
+        <div class="job-card">
+            <h3>电商业务专员</h3>
+            <p>7-8k·13薪</p>
+            <p>杭州</p>
+            <button>Join us.</button>
+        </div>
+        <div class="job-card">
+            <h3>算法工程师（应届生）</h3>
+            <p>20-35k</p>
+            <p>杭州</p>
+            <button>Join us.</button>
+        </div>
+        <!-- Add more job cards as needed -->
+    </div>
+
+    <div class="view-more">
+        <button>查看更多</button>
+    </div>
+
+</body>
+</html>
